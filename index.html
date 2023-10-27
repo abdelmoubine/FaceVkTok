@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- Title -->
+        <title>FaceVkTok</title>
+
+        <!-- KeyWords & Description -->
+        <meta name="description" content="A brief description of your page">
+        <meta name="keywords" content="keyword1, keyword2, keyword3">
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="index, follow">
+        <link rel="canonical" href="https://www.example.com/canonical-page">
+        <link rel="alternate" hreflang="en" href="https://www.example.com/page-english">
+        <link rel="alternate" hreflang="fr" href="https://www.example.com/page-french">
+        <meta name="author" content="AbdelMoubine MISSAOUI">
+
+        <!-- Open Graph Tags -->
+        <meta property="og:title" content="Your Open Graph Title">
+        <meta property="og:description" content="Description for Open Graph">
+        <meta property="og:image" content="https://www.example.com/image.jpg">
+        <meta property="og:url" content="https://www.example.com/page-url">
+        <meta property="og:type" content="website">
+
+        <!-- Twitter Card Tags -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@abdelmoubie3">
+        <meta name="twitter:title" content="Your Twitter Card Title">
+        <meta name="twitter:description" content="Description for Twitter Card">
+        <meta name="twitter:image" content="https://www.example.com/image.jpg">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="shortcut icon" href="Assest/img/logo-ico.ico" type="image/x-icon">
+
+    </head>
+
+    <body class="jumbotron" id="jumbo">
+        <div class="main-container">
+            <header class="px-4 pt-5 my-5">
+                <!-- Navbar -->
+                <nav class="navbar navbar-expand-lg fixed-top" id="navbar-dark">
+                    <div class="container">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="Assest/img/logo.png" alt="Your Logo" width="340" height="40">
+                        </a>
+                        <!-- Toggle Dark / Light Mode -->
+                        <div class="justify-content-end" id="navbarNav">
+                            <!-- Switch Light - Dark Mode -->
+                            <label for="darkmode" class="toggle-label"></label>
+                            <input type="checkbox" class="toggle" id="darkmode" onclick="switchMode()">
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <div class="clear"></div>
+
+            <!-- FaceVkTok Login Form -->
+            <div class="container mt-5">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <img src="Assest/img/logo-np.png" width="430" height="140">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores laudantium delectus eveniet sint
+                            culpa! Voluptatibus distinctio exercitationem, debitis quidem aliquam officiis eum unde non
+                            eaque, neque ipsum doloremque. Praesentium, inventore.</p>
+                    </div>
+                    <div class="col-md-4 ms-auto">
+                        <div class="card" id="Login1">
+                            <img src="Assest/img/logo-np.png" class="mx-auto mt-4" alt="FaceVkTok Image">
+                            <div class="card-body">
+                                <h2 class="card-title text-center">Sign in to FaceVkTok</h2>
+                                <form id="FaceVkTokLoginForm" action="" method="post">
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" name="login" id="login"
+                                            placeholder="Phone or email" required>
+                                    </div>
+                                    <input type="password" name="password" required style="display: none;" tabindex="-1">
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="checkbox" name="save_user" id="save_user"
+                                            checked="">
+                                        <label class="form-check-label" for="save_user">Save user</label>
+                                    </div>
+                                    <button class="btn btn-primary btn-lg btn-block" id="loginButton">Sign in</button>
+                                </form>
+                                <div class="text-center mt-3">
+                                    <a href="#" target="_blank">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container">
+                <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                    <div class="col-md-4 d-flex align-items-center">
+                        <a href="index.html"
+                        class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                        <img src="Assest/img/logo-np.png" alt="" width="30" height="24" class="bi">
+                    </a>
+                    <span class="mb-3 mb-md-0 text-reset" id="currentYear">© 2023 <a href="index.html" target="_self">FaceVkTok</a>, LLC</span>
+                    </div>
+                    
+
+
+                    <ul class="nav col-md-4 justify-content-end">
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-reset">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-reset">Features</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-reset">Pricing</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-reset">FAQs</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-reset">About</a></li>
+                    </ul>
+                </footer>
+            </div>
+        </div>
+
+        <!-- JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="Js/main.js"></script>
+    </body>
+
+</html>
